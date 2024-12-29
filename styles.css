@@ -1,50 +1,263 @@
+
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
     margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: #ffffff;
 }
 
-header {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
+h3 {
     text-align: center;
+}
+
+/* Navigation Bar */
+nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background-color: #222222;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 1000;
 }
 
 nav ul {
-    list-style: none;
+    list-style-type: none;
+    margin: 0;
     padding: 0;
+    display: flex;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+    margin: 0 10px;
 }
 
-nav a {
-    color: #fff;
+nav ul li a {
+    color: #ffffff;
     text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
 }
 
+nav ul li a:hover {
+    color: #42c227;
+}
+
+/* Sections */
 section {
-    padding: 20px;
-    margin: 10px;
-    background: #fff;
-    border-radius: 8px;
+    min-height: 100vh;
+    padding: 50px 20px;
 }
 
-.project {
-    margin-bottom: 15px;
-}
-
-footer {
+#intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #222222;
     text-align: center;
-    padding: 10px 0;
-    background: #333;
-    color: #fff;
-    position: relative;
-    bottom: 0;
+}
+
+#intro h1 {
+    font-size: 48px;
+    margin: 0;
+    color: #ffffff;
+}
+
+#intro h1 span {
+    font-weight: bold;
+    color: #42c227;
+}
+
+#intro p {
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+.typing {
+    display: inline;
+    font-weight: bold;
+    color: #42c227;
+}
+
+/* About Me Section */
+#about {
+    background-color: #000000;
+    padding: 50px 20px;
+}
+
+#about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+#about-text {
+    flex: 1;
+    max-width: 500px;
+    text-align: justify;
+}
+
+#about-text h2 {
+    font-size: 36px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+#about-image {
+    flex: 1;
+    max-width: 300px;
+}
+
+#about-image img {
     width: 100%;
+    border-radius: 10px;
+}
+
+#about-links {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.link-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #000000;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid #42c227;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: all 0.3s;
+}
+
+.link-box:hover {
+    background-color: #42c227;
+    color: #000000;
+}
+
+.link-box img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Skills Section */
+#skills {
+    background-color: #222222;
+    padding: 50px 20px;
+}
+
+#skills h2 {
+    font-size: 36px;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.skill-category {
+    margin-bottom: 30px;
+}
+
+.skill-category h3 {
+    font-size: 24px;
+    color: #42c227;
+    margin-bottom: 10px;
+}
+
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #222222; /* Default background */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill-item img {
+    width: 20px;
+    height: 20px;
+    display: none;
+}
+
+.skill-item:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    color: #222222;
+}
+
+.skill-python:hover {
+    background-color: #3776AB;
+}
+
+.skill-cpp:hover {
+    background-color: #00599C;
+}
+
+.skill-kotlin:hover {
+    background-color: #009688;
+}
+
+.skill-java:hover {
+    background-color: #007396;
+}
+
+.skill-sql:hover {
+    background-color: #F29111;
+}
+
+.skill-html:hover {
+    background-color: #E44D26;
+}
+
+.skill-javascript:hover {
+    background-color: #F0DB4F;
+}
+
+.skill-qt:hover {
+    background-color: #41CD52;
+}
+
+.skill-mongodb:hover {
+    background-color: #47A248;
+}
+
+.skill-git:hover {
+    background-color: #F05032;
+}
+
+.skill-aws:hover {
+    background-color: #FF9900;
+}
+
+.skill-linux:hover {
+    background-color: #FCC624;
+}
+
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
 }
