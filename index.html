@@ -3,48 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Vandal's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Your Name</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+    </nav>
 
+    <!-- Intro Section -->
+    <section id="intro">
+        <h1>Hey, it's me <span>Vandal</span></h1>
+        <p>I'm a <span class="typing"></span></p>
+    </section>
+
+    <!-- About Me Section -->
     <section id="about">
-        <h2>About Me</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus volutpat, risus eu accumsan finibus, ipsum nisl molestie leo, sed aliquet nisl purus a elit. Vestibulum posuere vehicula felis, a eleifend nisl ornare consequat. Nulla eget mauris massa. Aenean sit amet dictum nisl. In vitae pulvinar diam, ut viverra diam. Nunc ornare, libero a cursus lobortis, quam magna lacinia nulla, accumsan ornare felis diam vitae urna. Integer urna neque, venenatis nec aliquam a, rutrum eget mauris. Nam at massa molestie, scelerisque ipsum eu, auctor arcu. Donec dignissim pellentesque tincidunt. Maecenas tincidunt arcu sit amet metus lobortis aliquet. In cursus suscipit ante vel lobortis. Proin eu semper arcu.</p>
-    </section>
-
-    <section id="projects">
-        <h2>My Projects</h2>
-        <div class="project">
-            <h3>Project Title 1</h3>
-            <p>Short description of the project. <a href="link-to-project">View Project</a></p>
+        <div id="about-content">
+            <div id="about-text">
+                <h2>About Me</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt arcu nec metus dignissim, a venenatis lorem efficitur. Vivamus sit amet felis ut odio pharetra varius.</p>
+                <p>Phasellus et est nec sapien consectetur efficitur. Integer eu mi id magna tincidunt tincidunt nec ac tortor. Suspendisse potenti. Duis ut risus id justo auctor vehicula.</p>
+            </div>
+            <div id="about-image">
+                <img src="https://via.placeholder.com/300" alt="About Me Image">
+            </div>
         </div>
-        <div class="project">
-            <h3>Project Title 2</h3>
-            <p>Short description of the project. <a href="link-to-project">View Project</a></p>
+
+        <div id="about-links">
+            <a href="#" class="link-box">
+                <img src="https://via.placeholder.com/30" alt="Github Icon"> Github
+            </a>
+            <a href="#" class="link-box">
+                <img src="https://via.placeholder.com/30" alt="Reddit Icon"> Reddit
+            </a>
+            <a href="#" class="link-box">
+                <img src="https://via.placeholder.com/30" alt="Twitter Icon"> Twitter
+            </a>
         </div>
-        <!-- Add more projects as needed -->
     </section>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: email@example.com</p>
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skill-category">
+            <h3>Languages</h3>
+            <div class="skill-list">
+                <span class="skill-item skill-python" style="border: 2px solid #3776AB;"><img src="python-logo.png" alt="Python"> Python</span>
+                <span class="skill-item skill-cpp" style="border: 2px solid #00599C;"><img src="cpp-logo.png" alt="C++"> C++</span>
+                <span class="skill-item skill-kotlin" style="border: 2px solid #009688;"><img src="kotlin-logo.png" alt="Kotlin"> Kotlin</span>
+                <span class="skill-item skill-java" style="border: 2px solid #007396;"><img src="java-logo.png" alt="Java"> Java</span>
+                <span class="skill-item skill-sql" style="border: 2px solid #F29111;"><img src="sql-logo.png" alt="SQL"> SQL</span>
+            </div>
+            <div class="skill-list">
+                <span class="skill-item skill-html" style="border: 2px solid #E44D26;"><img src="html-logo.png" alt="HTML"> HTML</span>
+                <span class="skill-item skill-javascript" style="border: 2px solid #F0DB4F;"><img src="js-logo.png" alt="JavaScript"> JavaScript</span>
+            </div>
+        </div>
 
-        <p>GitHub: <a href="https://github.com/VandalByte">GitHub</a></p>
+        <div class="skill-category">
+            <h3>Software/Tools</h3>
+            <div class="skill-list">
+                <span class="skill-item skill-qt" style="border: 2px solid #41CD52;"><img src="qt-logo.png" alt="Qt Designer"> Qt Designer</span>
+                <span class="skill-item skill-mongodb" style="border: 2px solid #47A248;"><img src="mongodb-logo.png" alt="MongoDB"> MongoDB</span>
+                <span class="skill-item skill-git" style="border: 2px solid #F05032;"><img src="git-logo.png" alt="Git"> Git</span>
+                <span class="skill-item skill-aws" style="border: 2px solid #FF9900;"><img src="aws-logo.png" alt="AWS"> AWS</span>
+                <span class="skill-item skill-linux" style="border: 2px solid #FCC624;"><img src="linux-logo.png" alt="Linux"> Linux</span>
+        </div>
     </section>
-
-    <footer>
-        <p>&copy; 2024 Vandal. All rights reserved.</p>
-    </footer>
 </body>
 </html>
