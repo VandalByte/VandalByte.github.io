@@ -36,7 +36,7 @@ projects.forEach((project) => {
         <div class="project-details">
             <span class="project-header">${project.name}</span>
             <ul>${descriptionBullets}</ul> <!-- Render description as bullets -->
-            <p><strong>Skills:</strong> ${project.skills}</p>
+            <p><strong><img src="./assets/skill.png" width=16px style="position: relative; top: 2px;"> Skills:</strong> ${project.skills}</p>
         </div>
     `;
 
