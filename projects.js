@@ -60,7 +60,7 @@ const projects = [
     },
     {
         name: "Grub Tweaks - Community Blog",
-        description: "Grub Tweaks is a community-driven repository where users contribute tweaks, enhancements, and fixes for the GRUB bootloader. The repository serves as a platform for sharing various GRUB customizations, configurations, and bootloader-related scripts to improve user experience across Linux systems.",
+        description: "Grub Tweaks is a community-driven repository where users contribute tweaks, enhancements, and fixes for the GRUB bootloader. The repository serves as a platform for sharing various GRUB customizations, configurations, and bootloader-related knowledge to help new users.",
         skills: "Linux, Shell Script, GRUB, Bootloader",
         image: "./assets/project/letter-g.png",
         link: "https://github.com/VandalByte/grub-tweaks",

@@ -75,11 +75,18 @@ section {
     margin-top: 10px;
     font-size: 24px;
 }
+/* Text Typing Animation */
+.animated-text {
+    display: inline-block;
+    border-right: 2px solid #42c227; /* Blinking cursor */
+    padding-right: 5px;
+    animation: blink-caret 0.75s step-end infinite;
+}
 
-.typing {
-    display: inline;
-    font-weight: bold;
-    color: #42c227;
+@keyframes blink-caret {
+    50% {
+        border-color: transparent;
+    }
 }
 
 /* About Me Section */
@@ -111,6 +118,9 @@ section {
 #about-image {
     flex: 1;
     max-width: 300px;
+    position: relative;
+    top: 50px;
+    border: 2px solid white;
 }
 
 #about-image img {

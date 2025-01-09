@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vandal's Portfolio</title>
     <link rel="stylesheet" href="../styles.css">
 </head>
+
 <body>
-    
     <!-- Navigation Bar -->
     <nav>
         <ul>
@@ -21,7 +22,7 @@
     <!-- Intro Section -->
     <section id="intro">
         <h1>Hey, it's me <span>Vandal</span></h1>
-        <p>I'm a <span class="typing"></span></p>
+        <p>I'm a <span class="animated-text"></span></p>
     </section>
 
     <!-- About Me Section -->
@@ -29,8 +30,9 @@
         <div id="about-content">
             <div id="about-text">
                 <h2>About Me</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt arcu nec metus dignissim, a venenatis lorem efficitur. Vivamus sit amet felis ut odio pharetra varius.</p>
-                <p>Phasellus et est nec sapien consectetur efficitur. Integer eu mi id magna tincidunt tincidunt nec ac tortor. Suspendisse potenti. Duis ut risus id justo auctor vehicula.</p>
+                <p>I'm a Computer Science and Engineering student who is particularly interested in cybersecurity, software development, and GUI development. I appreciate creating programs that are secure, efficient, and user-friendly.</p>
+                <p>My ambition is to leverage my abilities to produce novel software solutions while focusing on enhancing cybersecurity. To address modern security threats, I am particularly interested in designing safe software and improving network resilience.</p>
+                <p>I'm constantly investigating new technologies, collaborating on projects, and learning to keep current in cybersecurity, software engineering, GUI development, and cloud technologies such as AWS.</p>
             </div>
             <div id="about-image">
                 <img src="/assets/profile.jpg" alt="About Me Image">
@@ -52,7 +54,7 @@
 
     <!-- Skills Section -->
     <section id="skills">
-        <h2>Skills</h2>
+        <h2>My Skills</h2>
         <div class="skill-category">
             <h3>Programming Languages</h3>
             <div class="skill-list">
@@ -78,14 +80,17 @@
                 <span class="skill-item"><img src="linux-logo.png" alt="Linux"> Linux</span>
         </div>
     </section>
+
     <!-- Projects Section -->
     <section id="projects">
-        <h2>Projects</h2>
+        <h2>My Projects</h2>
         <div id="projects-container">
             <!-- Project items will be dynamically loaded here -->
         </div>
     </section>
-    <script src="projects.js"></script>
 
+    <!-- JS being loaded -->
+    <script src="projects.js"></script>
+    <script src="typingAnimation.js"></script>
 </body>
 </html>
