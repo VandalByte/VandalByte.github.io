@@ -211,28 +211,16 @@ section {
     color: #222222;
 }
 
-/* Smooth Scroll */
-html {
-    scroll-behavior: smooth;
-}
-
-/* General Styling */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #121212;
-    color: #ffffff;
-}
-
-h2 {
-    text-align: center;
-    margin: 20px 0;
-}
-
 /* Projects Section */
 #projects {
     padding: 20px;
+}
+
+#projects h2 {
+    font-size: 36px;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 40px;
 }
 
 #projects-container {

@@ -1,6 +1,5 @@
-// File: projects.js
-// Credits:
-// Icon Source : https://www.flaticon.com/packs/a-to-z-capital-letters-14
+// Sources
+// Project Icons : https://www.flaticon.com/packs/a-to-z-capital-letters-14
 
 const projects = [
     {
