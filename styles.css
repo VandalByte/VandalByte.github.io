@@ -143,6 +143,7 @@ section {
 .link-box:hover {
     background-color: #42c227;
     color: #000000;
+    transform: scale(1.1);
 }
 
 .link-box img {
@@ -189,73 +190,26 @@ section {
     gap: 10px;
     padding: 10px 20px;
     border-radius: 20px;
+    border: 2px solid #ffffff;
     font-size: 16px;
     font-weight: bold;
     color: #ffffff;
-    background-color: #222222; /* Default background */
+    background-color: #222222;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .skill-item img {
     width: 20px;
     height: 20px;
-    display: none;
+    /* display: none; */
 }
 
 .skill-item:hover {
     transform: scale(1.1);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    background-color: #ffffff;
     color: #222222;
 }
-
-.skill-python:hover {
-    background-color: #3776AB;
-}
-
-.skill-cpp:hover {
-    background-color: #00599C;
-}
-
-.skill-kotlin:hover {
-    background-color: #009688;
-}
-
-.skill-java:hover {
-    background-color: #007396;
-}
-
-.skill-sql:hover {
-    background-color: #F29111;
-}
-
-.skill-html:hover {
-    background-color: #E44D26;
-}
-
-.skill-javascript:hover {
-    background-color: #F0DB4F;
-}
-
-.skill-qt:hover {
-    background-color: #41CD52;
-}
-
-.skill-mongodb:hover {
-    background-color: #47A248;
-}
-
-.skill-git:hover {
-    background-color: #F05032;
-}
-
-.skill-aws:hover {
-    background-color: #FF9900;
-}
-
-.skill-linux:hover {
-    background-color: #FCC624;
-}
-
 
 /* Smooth Scroll */
 html {
